@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manne.sharedpreferences.MainActivity"
+    android:background="@color/darkBlue">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/husky"/>
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="50dp"
+        android:hint="First Name"/>
+        <EditText
+            android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="50dp"
+        android:hint="Last Name"/>
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="50dp"
+            android:hint="Age"/>
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="left"
+            android:layout_marginLeft="50dp"
+            >
+            <RadioButton
+            android:id="@+id/radioM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"/>
+
+            <RadioButton
+                android:id="@+id/radioF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonSaveUser"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="50dp"
+            android:text="SAVE USER DETAILS"/>
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="50dp"
+            android:text="Continue"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
